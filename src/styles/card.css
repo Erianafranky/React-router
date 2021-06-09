@@ -1,0 +1,15 @@
+.card-link {
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+        90deg,
+        rgb(77, 12, 255) 0%,
+        rgb(87, 0, 250) 100%
+    );
+    color: #fff;
+}
