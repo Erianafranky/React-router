@@ -12,6 +12,11 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	padding: 20px;
+	background: linear-gradient(
+		90deg,
+		rgb(80, 16, 255) 0%,
+		rgb(100, 115, 255) 100%
+	  );
 }
 
 .card {
@@ -22,7 +27,7 @@ body {
 	background-color: #ddd;
 	border: 1px solid #999;
 	border-radius: 0.2em;
-	padding: 1em;
+	padding: 2em;
 
 	box-shadow: 0px 13px 5px -10px #888;
 	transition: all 200ms;
@@ -36,5 +41,5 @@ body {
 
 
 a {
-  color: blue;
-}
+	color: blue;
+  }

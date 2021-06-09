@@ -1,23 +1,14 @@
-import { useEffect, useState } from 'react';
-import Card from '../components/card';
+import {Link} from 'react-router-dom';
+import './../styles/home.css';
 
 const Home = () => {
-	let [posts, setPosts] = useState([]);
-
-	useEffect(() => {
-		fetch('https://jsonplaceholder.typicode.com/posts')
-			.then((res) => res.json())
-			.then((result) => {
-				console.log(result);
-				setPosts(result);
-			});
-	}, []);
 
 	return (
-		<div className='App'>
-			{posts.map(({ id, title, body, userId }) => (
-				<Card key={id} title={title} body={body} userId={userId} />
-			))}
+		<div className='mainbox'>
+			<h1>Welcome to our Blog</h1>
+			<p>View our posts here <Link to='/post'>User Posts</Link>
+			</p>
+			
 		</div>
 	);
 };

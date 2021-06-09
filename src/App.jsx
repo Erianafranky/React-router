@@ -3,6 +3,7 @@ import FourOhFour from './pages/404';
 import Home from './pages/Home';
 import Posts from './pages/Posts';
 import UserPosts from './pages/UserPosts';
+import Post from './pages/Post';
 
 const App = () => {
 	return (
@@ -21,7 +22,10 @@ const App = () => {
 				<Route exact path='/userposts/:userid'>
 					<UserPosts />
 				</Route>
-
+				{/* render single Post Component when we hit /post:/id */}
+				<Route exact path='/post/:id'>
+					<Post />
+				</Route>
 				{/* fallback to a 404 if a route is not matched */}
 				<Route>
 					<FourOhFour />

@@ -1,0 +1,31 @@
+.post-link {
+  font-weight: bold;
+  margin-top: 20px;
+    
+}
+
+.title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.message {
+    text-align: justify;
+}
+
+.link {
+    padding: 10px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+        90deg,
+        rgb(12, 16, 255) 0%,
+        rgb(17, 0, 250) 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
+
+
+}
